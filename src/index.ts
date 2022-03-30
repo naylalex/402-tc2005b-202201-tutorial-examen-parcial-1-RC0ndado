@@ -1,35 +1,21 @@
-import './styles.css';
-import isPalindrome from './checker';
+//import './style.css';
+
 
 console.log("index.ts/start");
 
-function buttonSubmitClick() {
-    //Obtener referencia a inputText
-    const inputText = <HTMLInputElement>document.getElementById('inputText');
-    let bPalindrome = null;
-    if (inputText) {
-        //Invocar isPalindrome
-        bPalindrome = isPalindrome(inputText.value);
-        console.log(bPalindrome);
-    }
-
-    //Actualizar divResult
-    const divResult = <HTMLDivElement>document.getElementById('divResult');
-    if (divResult) {
-        if (bPalindrome) {
-            divResult.innerText = 'The word is palindrome!'
-            //TODO: Implementa la asignación del atributo className con valor 'palindrome'
-        } else {
-            //TODO: Asigna a la propiedad innerText de divResult el valor 'The word is not palindrome, sorry.'
-            divResult.className = "notPalindrome";
+buttonSubmitClick() => ( 
+    const e1 = <HTMLInputElement>document.getElementById('C1');
+    const e2 = <HTMLInputElement>document.getElementById('C2');
+if ('Conversión 1') {
+        let numero = parseFloat(e1.value)
+        try (numero < 480 && numero > 0.5) {
+            if (valor < 480 && valor > 240) {
+                inputInt2.innerText = '88'
+            }
+            else if (valor < 240 && valor > 120) {
+                inputInt2.innerText = '91'
+            }
         }
+        catch { console.error("El rango de su numero no es correcto") }
     }
-}
-
-const btn = document.querySelector('button');
-if (btn) {
-  console.log('attaching listener');
-  //TODO: invoca la función addEventListener de btn con parámetros 'click' y buttonSubmitClick
-}
-
-
+)
